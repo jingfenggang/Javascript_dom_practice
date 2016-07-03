@@ -45,7 +45,7 @@ function prepareGallery(){
     var links=gallery.getElementsByTagName("a");
     for (var i=0; i <links.length; i++) {
         links[i].onclick=function(){
-            return !showPic(this);
+            return showPic(this);
         }
         links[i].onkeypress=links[i].onclick;
     }
